@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+#container{
+    transform-style: preserve-3d;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5.1);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.foreground, .background{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#container h1{
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px black;
+    top: 10rem;
+
+}
+
+#content{
+    background-color: rgb(43, 43, 43);
+}
+
+#start{
+    padding: 3rem 6rem;
+}
+
+#start h1{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px black;
+    padding: 2rem 0rem;
+}
+
+#start p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.sport p{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0rem 6em;
+}
+.sport{
+    /* padding: 4rem 0rem; */
+}
+
+.heading{
+    background-image: url('sport-3.jpg');
+
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading h1{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px black;
+    background-color: rgb(37, 36, 36);
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+.text{
+    padding: 4rem 0rem;
+}
+
+#heading3{
+    background-image: url('sport-3.jpg');
+
+}
+
+#heading2{
+    background-image: url('sport-2.jpg');
+    
+}
+
+#heading1{
+    background-image: url('sport-1.jpg');
+}
+
